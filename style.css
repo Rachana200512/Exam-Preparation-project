@@ -1,0 +1,160 @@
+ .main{
+    border-radius: 20px;
+   border: 2px solid gray;
+   width: auto;
+   padding: 10px 20px 0 20px
+ }
+
+.progress-heading {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom: 15px;
+   position: relative;
+}
+ 
+
+.progress-heading .pro {
+    margin-left:2;
+    padding-right: 2px;
+    color:solid black;
+    font-weight: 500;
+   display: inline-block;
+}
+
+.progress-heading .questions {
+    margin-right: 2;
+    padding-left: 2px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 5%; /* Question 1 of 20 */
+    height: 100%;
+    background: blue;
+    border-radius: 20px;
+}
+
+.subject, .year {
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    position: relative;
+   box-sizing: border-box;
+   gap:12px ;
+}
+
+.grid-btn {
+  /* This ensures text longer than one word wraps beautifully inside the button */
+  width: 100%;  
+  padding: 14px; 
+  background-color:rgb(241, 239, 239);
+  border: 1px solid gray;
+  border-style: outset;
+  color:black;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box; 
+ 
+}
+a{
+     text-decoration: none;
+     color: inherit;
+}
+
+.question-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ 
+/* Rows handle natural stacking of items */
+.question-row {
+  margin-bottom: 22px;
+  font-size: 17.5px;
+}
+
+.question-text {
+  display: block;
+  margin-bottom: 8px;
+}
+ 
+.question-number {
+  font-weight: bold;
+}
+
+/* Displays the choices natively horizontally inline */
+.options {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding-left: 20px;
+}
+
+/* Layout capsule wrappers surrounding specific textual entries */
+.opt {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Target internal descriptive strings inside labels to build matching pill shapes */
+.opt span {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #7a7a7a;
+  border-radius: 14px;
+  padding: 3px 14px;
+  font-size: 16.5px;
+  transition: background-color 0.15s ease;
+}
+
+/* Standardized sizing for radio components */
+.opt input[type="radio"] {
+  margin: 0 2px 0 0;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+/* Visual active layout states when user selects items */
+.opt input[type="radio"]:checked + span {
+  background-color:rgb(183, 175, 175);
+  font-weight: bold;
+}
+
+/* Hover style helper */
+.opt:hover span {
+  background-color:rgb(131, 131, 255);
+}
+
+.submit{
+       display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+ button{
+    background-color: rgb(94, 94, 240);
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:auto;
+    height:auto;
+ 
+ }
+ 
