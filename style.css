@@ -57,7 +57,7 @@
   /* This ensures text longer than one word wraps beautifully inside the button */
   width: 100%;  
   padding: 14px; 
-  background-color:rgb(241, 239, 239);
+  background-color:#0d2f7a
   border: 1px solid gray;
   border-style: outset;
   color:black;
